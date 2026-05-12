@@ -121,7 +121,7 @@ Upload to GitHub Pages for free hosting.
     </div>
 
     <footer>
-        <p>&copy; @CopyRight 2025. All rights <reserved class="212223040046"></reserved></p>
+        <p>&copy; @CopyRight 2026 ESWANTH KUMAR 212223040046. All rights <reserved class="212223040046"></reserved></p>
     </footer>
 
     <script>
@@ -175,7 +175,7 @@ Upload to GitHub Pages for free hosting.
 
 ## OUTPUT
 
-<img width="819" height="794" alt="image" src="https://github.com/user-attachments/assets/b3cf35dc-7e8d-4d8a-898b-8dd691a360be" />
+<img width="919" height="794" alt="image" src="https://github.com/user-attachments/assets/fdef08fb-1300-4c22-a97e-61920a65031b" />
 
 
 ## RESULT
