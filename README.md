@@ -1,5 +1,8 @@
 # Ex03 To-Do List using JavaScript
-## Date:
+## Date: 12-05-2026
+
+## NAME: ESWANTH KUMAR K
+## REG NO: 212223040046
 
 ## AIM
 To create a To-do Application with all features using JavaScript.
@@ -36,9 +39,143 @@ Deploy the website.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Todo Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 8px;
+        }
+        .todo-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .todo-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #4caf50;
+            border-radius: 4px;
+        }
+        .todo-list {
+            list-style: none;
+            padding: 0;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .todo-item.completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .todo-buttons button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .todo-buttons button:first-child {
+            background-color: #4caf50;
+            color: white;
+        }
+        .todo-buttons button:last-child {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Todo Application</h1>
+    </header>
 
+    <div class="todo-container">
+        <h2>Manage Your Tasks</h2>
+        <input type="text" id="todo-input" class="todo-input" placeholder="Add a new task">
+        <ul id="todo-list" class="todo-list"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; @CopyRight 2025. All rights <reserved class="212223040046"></reserved></p>
+    </footer>
+
+    <script>
+        const todoInput = document.getElementById('todo-input');
+        const todoList = document.getElementById('todo-list');
+
+        function addTodo() {
+            const task = todoInput.value.trim();
+            if (task === '') return;
+
+            const li = document.createElement('li');
+            li.className = 'todo-item';
+
+            const span = document.createElement('span');
+            span.textContent = task;
+
+            const buttonsDiv = document.createElement('div');
+            buttonsDiv.className = 'todo-buttons';
+
+            const completeBtn = document.createElement('button');
+            completeBtn.textContent = 'Complete';
+            completeBtn.onclick = () => {
+                li.classList.toggle('completed');
+            };
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.onclick = () => {
+                todoList.removeChild(li);
+            };
+
+            buttonsDiv.appendChild(completeBtn);
+            buttonsDiv.appendChild(deleteBtn);
+
+            li.appendChild(span);
+            li.appendChild(buttonsDiv);
+
+            todoList.appendChild(li);
+            todoInput.value = '';
+        }
+
+        todoInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                addTodo();
+            }
+        });
+    </script>
+</body>
+</html>
+```
 
 ## OUTPUT
+
+<img width="819" height="694" alt="image" src="https://github.com/user-attachments/assets/b3cf35dc-7e8d-4d8a-898b-8dd691a360be" />
 
 
 ## RESULT
